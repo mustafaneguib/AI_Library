@@ -43,17 +43,14 @@ Public License instead of this License.  But first, please read
 '''
 
 from queue import *
+from utilities import Utilities
 
 
-class Search(object):
+class BFS(object):
     def __init__(self):
         pass
 
-    def astar(self):
-
-        pass
-
-    def bfs(self, root):
+    def search(self, root):
         '''
         Breadth First Search algorithm
         :param root: root node
@@ -68,29 +65,7 @@ class Search(object):
             print("-->" + current_node.get_name())
             if current_node.is_goal():
                 return current_node
-            for node, heuristic in current_node.get_neighbours():
-                if self.is_node_in_list(node, visited) == False:
+            for node, path_cost in current_node.get_neighbours():
+                if Utilities.Utilities().is_node_in_list(node, visited) == False:
                     visited.append(node)
                     q.put(node)
-
-    def dfs(self):
-        pass
-
-    def is_node_in_list(self, node, list):
-        '''
-        This function checks if the given node is in the provided list
-        :param node:
-        :param list:
-        :return: return True or False
-        '''
-        found_node = False
-        for n in list:
-            if n.get_name() == node.get_name():
-                found_node = True
-                break
-
-        if found_node:
-            return True
-        else:
-            return False
-

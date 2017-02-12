@@ -43,7 +43,38 @@ Public License instead of this License.  But first, please read
 '''
 
 from Data import Node
-from SearchAlgorithms import Search
+from SearchAlgorithms import DFS
+from SearchAlgorithms import BFS
+from SearchAlgorithms import AStar
+
+
+def build_a_network():
+    a = Node.Node(1, "A", None, 30, False)
+    b = Node.Node(2, "B", None, 40, False)
+    c = Node.Node(3, "C", None, 25, False)
+    d = Node.Node(4, "D", None, 25, False)
+    e = Node.Node(5, "E", None, 17, False)
+    f = Node.Node(6, "F", None, 20, False)
+    g = Node.Node(7, "G", None, 18, False)
+    h = Node.Node(8, "H", None, 2, False)
+    i = Node.Node(9, "I", None, 7, False)
+    j = Node.Node(10, "J", None, 0, True)
+    k = Node.Node(11, "K", None, 8, False)
+
+    a.set_neighbours([(b, 5), (c, 15), (d, 10)])
+    b.set_neighbours([(a, 5)])
+    c.set_neighbours([(a, 15), (d, 8), (e, 10), (f, 15)])
+    d.set_neighbours([(a, 10), (c, 8), (e, 8), (g, 15)])
+    e.set_neighbours([(c, 10), (d, 8), (g, 20), (i, 10), (h, 18)])
+    f.set_neighbours([(c, 15)])
+    g.set_neighbours([(d, 15), (e, 20), (h, 16), (k, 15)])
+    h.set_neighbours([(e, 18), (g, 16), (i, 8), (j, 4), (k, 5)])
+    i.set_neighbours([(e, 10), (h, 8), (j, 10)])
+    j.set_neighbours([(b, 5), (c, 15), (d, 10)])
+    k.set_neighbours([(g, 15), (h, 5), (j, 10)])
+
+    return a
+
 
 def build_arad_network():
     '''
@@ -51,6 +82,8 @@ def build_arad_network():
     Romania which are connected to each other via roads.
     After this function has completed its execution,
     the root node, in our case city of Arad is returned.
+    The diagram of the network is available at
+    https://csunplugged.files.wordpress.com/2012/09/romania-graph1.png
     :return: node
     '''
     arad = Node.Node(1, "Arad", None, 366, False)
@@ -100,7 +133,40 @@ def build_arad_network():
 
 print("Open Source Artificial Intelligence Library Copyright (C) 2017 Mustafa Neguib")
 
-search = Search.Search()
 arad = build_arad_network()
+bfs = BFS.BFS()
+dfs = DFS.DFS()
+print("Running Breadth First Search")
+print("Found Goal Node: " + bfs.search(arad).get_name())
+print("*****************************")
+print("Running Depth First Search")
+print("Found Goal Node: " + dfs.search(arad).get_name())
 
-print("Found Goal Node: " + search.bfs(arad).get_name())
+a = build_a_network();
+print("*****************************")
+print("Running A* Search")
+# search.astar(a)
+
+print("*****************************")
+
+'''
+i = 0
+cost = 0
+for n in visited:
+    if i < len(visited) - 1:
+        print("cost of %s+%s %d" % (
+        visited[i].get_name(), visited[i + 1].get_name(), visited[i].get_cost() + visited[i + 1].get_cost()))
+        cost = cost + visited[i].get_cost() + visited[i + 1].get_cost()
+    i = i + 1
+print(cost)
+'''
+'''
+visited = []
+visited.append(a)
+b = a.get_neighbours()[0][0]
+visited.append(b)
+c = b.get_neighbours()[0][0]
+visited.append(c)
+cost=AStar.total_cost_so_far(c,visited)
+print(cost)
+'''
