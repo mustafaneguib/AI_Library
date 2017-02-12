@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d43857d2-05b6-4f30-9ace-8cadf7a3e29f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SearchAlgorithms/AStar.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SearchAlgorithms/DFS.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utilities/Utilities.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utilities/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SearchAlgorithms/AStar.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SearchAlgorithms/BFS.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SearchAlgorithms/DFS.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SearchAlgorithms/__init__.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SearchAlgorithms/Search.py" afterPath="$PROJECT_DIR$/SearchAlgorithms/BFS.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/Node.py" afterPath="$PROJECT_DIR$/data/Node.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/__init__.py" afterPath="$PROJECT_DIR$/data/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SearchAlgorithms/AStar.py" afterPath="$PROJECT_DIR$/search/AStar.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SearchAlgorithms/BFS.py" afterPath="$PROJECT_DIR$/search/BFS.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SearchAlgorithms/DFS.py" afterPath="$PROJECT_DIR$/search/DFS.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SearchAlgorithms/__init__.py" afterPath="$PROJECT_DIR$/search/__init__.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,7 +28,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="DFS.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SearchAlgorithms/DFS.py">
+        <entry file="file://$PROJECT_DIR$/search/DFS.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="194">
               <caret line="59" column="36" lean-forward="true" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
@@ -34,7 +38,7 @@
         </entry>
       </file>
       <file leaf-file-name="BFS.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SearchAlgorithms/BFS.py">
+        <entry file="file://$PROJECT_DIR$/search/BFS.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="500">
               <caret line="68" column="71" lean-forward="false" selection-start-line="68" selection-start-column="71" selection-end-line="68" selection-end-column="71" />
@@ -56,7 +60,7 @@
         </entry>
       </file>
       <file leaf-file-name="AStar.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SearchAlgorithms/AStar.py">
+        <entry file="file://$PROJECT_DIR$/search/AStar.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="250">
               <caret line="52" column="4" lean-forward="false" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
@@ -70,8 +74,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="136" column="15" lean-forward="true" selection-start-line="136" selection-start-column="15" selection-end-line="136" selection-end-column="15" />
+            <state relative-caret-position="-282">
+              <caret line="51" column="36" lean-forward="false" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
               <folding>
                 <element signature="e#2111#2132#0" expanded="true" />
               </folding>
@@ -80,7 +84,7 @@
         </entry>
       </file>
       <file leaf-file-name="Node.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data/Node.py">
+        <entry file="file://$PROJECT_DIR$/data/Node.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1581">
               <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
@@ -115,10 +119,10 @@
         <option value="$PROJECT_DIR$/SearchAlgorithms/Search.py" />
         <option value="$PROJECT_DIR$/Utilities/Utilities.py" />
         <option value="$PROJECT_DIR$/SearchAlgorithms/AStar.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/SearchAlgorithms/BFS.py" />
         <option value="$PROJECT_DIR$/utilities/Utilities.py" />
         <option value="$PROJECT_DIR$/SearchAlgorithms/DFS.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -180,7 +184,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SearchAlgorithms" />
+              <option name="myItemId" value="search" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -194,7 +198,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Data" />
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -395,7 +399,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -417,7 +421,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SearchAlgorithms/DFS.py">
+    <entry file="file://$PROJECT_DIR$/search/DFS.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -435,7 +439,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/Node.py">
+    <entry file="file://$PROJECT_DIR$/data/Node.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1581">
           <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
@@ -450,7 +454,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SearchAlgorithms/DFS.py">
+    <entry file="file://$PROJECT_DIR$/search/DFS.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
@@ -462,6 +466,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2720">
           <caret line="160" column="69" lean-forward="true" selection-start-line="160" selection-start-column="69" selection-end-line="160" selection-end-column="69" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -475,7 +480,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/Node.py">
+    <entry file="file://$PROJECT_DIR$/data/Node.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
@@ -490,7 +495,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SearchAlgorithms/DFS.py">
+    <entry file="file://$PROJECT_DIR$/search/DFS.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -508,7 +513,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/Node.py">
+    <entry file="file://$PROJECT_DIR$/data/Node.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
@@ -520,6 +525,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2720">
           <caret line="160" column="69" lean-forward="false" selection-start-line="160" selection-start-column="69" selection-end-line="160" selection-end-column="69" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -530,7 +536,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/Node.py">
+    <entry file="file://$PROJECT_DIR$/data/Node.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1581">
           <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
@@ -538,7 +544,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SearchAlgorithms/AStar.py">
+    <entry file="file://$PROJECT_DIR$/search/AStar.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="52" column="4" lean-forward="false" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
@@ -556,7 +562,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SearchAlgorithms/BFS.py">
+    <entry file="file://$PROJECT_DIR$/search/BFS.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="68" column="71" lean-forward="false" selection-start-line="68" selection-start-column="71" selection-end-line="68" selection-end-column="71" />
@@ -566,7 +572,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SearchAlgorithms/DFS.py">
+    <entry file="file://$PROJECT_DIR$/search/DFS.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="59" column="36" lean-forward="true" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
@@ -576,8 +582,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="136" column="15" lean-forward="true" selection-start-line="136" selection-start-column="15" selection-end-line="136" selection-end-column="15" />
+        <state relative-caret-position="-282">
+          <caret line="51" column="36" lean-forward="false" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
           <folding>
             <element signature="e#2111#2132#0" expanded="true" />
           </folding>

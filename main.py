@@ -42,10 +42,10 @@ Public License instead of this License.  But first, please read
 <http://www.gnu.org/philosophy/why-not-lgpl.html>.
 '''
 
-from Data import Node
-from SearchAlgorithms import DFS
-from SearchAlgorithms import BFS
-from SearchAlgorithms import AStar
+from data import Node
+from search import DFS
+from search import BFS
+from search import AStar
 
 
 def build_a_network():
